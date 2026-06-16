@@ -11,7 +11,29 @@ function renderStack() {
         container.appendChild(div);
     }
 }
+let queue = [];
 
+function enqueue() {
+  const value = document.getElementById("value").value;
+  if(value){
+    queue.push(value);
+    renderQueue();
+  }
+}
+
+function dequeue() {
+  queue.shift();
+  renderQueue();
+}
+
+function renderQueue() {
+  const container = document.getElementById("queue-container");
+  container.innerHTML = "";
+
+  queue.forEach(item => {
+    container.innerHTML += `<div class="box">${item}</div>`;
+  });
+}
 function push() {
     let value = document.getElementById("value").value;
 
