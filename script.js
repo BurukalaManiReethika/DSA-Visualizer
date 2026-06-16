@@ -20,6 +20,9 @@ function enqueue() {
     renderQueue();
   }
 }
+function toggleTheme(){
+  document.body.classList.toggle("dark");
+}
 
 function dequeue() {
   queue.shift();
