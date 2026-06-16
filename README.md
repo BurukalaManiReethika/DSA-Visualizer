@@ -1,16 +1,33 @@
 # 🚀 DSA Visualizer
 
-An interactive Python application that visualizes fundamental Data Structures such as Stack, Queue, and Linked List using Tkinter.
+A Python Tkinter application that visualizes:
 
-## 📌 Features
+- Stack
+- Queue
+- Linked List
 
-- Stack Operations
-  - Push
-  - Pop
-  - Peek
+## Features
 
-- Queue Operations
-  - Enqueue
-  - Dequeue
-  - Front
+✅ Push & Pop Operations
 
+✅ Enqueue & Dequeue Operations
+
+✅ Insert & Delete Nodes
+
+✅ Interactive GUI
+
+## Tech Stack
+
+- Python
+- Tkinter
+- Data Structures
+
+## Run
+
+```bash
+python main.py
+```
+
+## Author
+
+Mani Reethika
