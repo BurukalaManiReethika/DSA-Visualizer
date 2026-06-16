@@ -1,35 +1,99 @@
 
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DSA Visualizer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="container">
+
     <h1>🚀 DSA Visualizer</h1>
 
-    <input type="text" id="value" placeholder="Enter value">
+    <div class="controls">
+        <input type="text" id="value" placeholder="Enter Value">
 
-    <div>
-        <button onclick="toggleTheme()">🌙 Theme</button>
-        <button onclick="push()">Push</button>
-        <button onclick="pop()">Pop</button>
+        <button onclick="toggleTheme()">
+            🌙 Theme
+        </button>
     </div>
 
-    <h2>Stack</h2>
-    <div id="stack-container"></div>
+    <!-- STACK -->
+    <div class="card">
+        <h2>📚 Stack (LIFO)</h2>
 
-    <script src="script.js"></script>
-    <table>
-<tr><th>Operation</th><th>Time Complexity</th></tr>
-<tr><td>Push</td><td>O(1)</td></tr>
-<tr><td>Pop</td><td>O(1)</td></tr>
-<tr><td>Search</td><td>O(n)</td></tr>
-</table>
-    <h2>Queue</h2>
-<button onclick="enqueue()">Enqueue</button>
-<button onclick="dequeue()">Dequeue</button>
-<div id="queue-container"></div>
+        <button onclick="push()">Push</button>
+        <button onclick="popItem()">Pop</button>
+
+        <div id="stack-container"></div>
+    </div>
+
+    <!-- QUEUE -->
+    <div class="card">
+        <h2>🔄 Queue (FIFO)</h2>
+
+        <button onclick="enqueue()">Enqueue</button>
+        <button onclick="dequeue()">Dequeue</button>
+
+        <div id="queue-container"></div>
+    </div>
+
+    <!-- LINKED LIST -->
+    <div class="card">
+        <h2>🔗 Linked List</h2>
+
+        <button onclick="insertNode()">Insert</button>
+        <button onclick="deleteNode()">Delete</button>
+
+        <div id="linked-container"></div>
+    </div>
+
+    <!-- COMPLEXITY -->
+    <div class="card">
+        <h2>⚡ Time Complexity</h2>
+
+        <table>
+            <tr>
+                <th>Operation</th>
+                <th>Complexity</th>
+            </tr>
+
+            <tr>
+                <td>Push</td>
+                <td>O(1)</td>
+            </tr>
+
+            <tr>
+                <td>Pop</td>
+                <td>O(1)</td>
+            </tr>
+
+            <tr>
+                <td>Search</td>
+                <td>O(n)</td>
+            </tr>
+
+            <tr>
+                <td>Enqueue</td>
+                <td>O(1)</td>
+            </tr>
+
+            <tr>
+                <td>Dequeue</td>
+                <td>O(1)</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<footer>
+    Built with ❤️ by Mani Reethika
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
