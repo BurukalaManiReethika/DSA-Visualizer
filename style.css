@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 40px;
+}
+
+#stack-container {
+    margin-top: 20px;
+}
+
+.box {
+    width: 120px;
+    padding: 10px;
+    margin: 5px auto;
+    border: 2px solid black;
+    font-size: 18px;
+}
